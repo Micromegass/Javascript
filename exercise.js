@@ -15,7 +15,7 @@ function number(numbers) {
   }
 else  {
   console.log("this is the third string");
-;
+
 
 }
 }
