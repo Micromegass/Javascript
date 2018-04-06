@@ -1,17 +1,10 @@
 
-
-function factorial(num) {
-
-  if (num < 1) {
-  console.log -1; }
-
-  else if (num = 0 ) {
-  console.log 1;}
-
-  else {
-console.log (num * factorialize(num-1));}
-
+function sumame(arr) {
+  var suma = 0;
+  for (var i=0; i < arr.length; i++) {
+    suma += arr[i];
+  }
+  console.log(suma);
 }
 
-
-factorial(0)
+sumame([])
