@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ajax</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  </head>
+  <body>
+
+
+    <ul id="cats"></ul>
+
+<script>
+
+
+
+var $cats = $('#cats');
+
+$(function () {
+$.ajax({
+  type: "GET",
+  url: "http://thecatapi.com/api/images/get?format=xml&results_per_page=20",
+  dataType: "XML"
+  crossDomain: 'true',
+  success: function(cats) {
+
+  $.each(cats, function(i, cat) {
+  $cats.append('<li> Name');
+
+
+});
+    // console.log('success', data);
+  }
+});
+});
+
+
+</script>
+
+  </body>
+</html>

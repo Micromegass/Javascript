@@ -6,7 +6,7 @@ function guess_number() {
   var num = parseInt(num)
   document.getElementById("guess").innerHTML;
 
-    if (num > 5 || num < 4 ){
+    if (num >= 5 || num < 4 ){
      alert("nope try again");
      return guess_number();
 

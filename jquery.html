@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba de jQuery</title>
+
+<style>
+
+div {
+background-color: red;
+height: 200px;
+}
+</style>
+
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+<div class="">
+  click and the background color will change
+</div>
+
+
+
+
+
+  <script>
+
+  $('div').on('click', function() {
+  $(this).css('background', 'yellow');
+});
+
+$('body').prepend("<h1>Hola Mundo</h1>");
+
+
+//
+// html - Reemplaza el contenido del los elementos seleccionados con un nuevo contenido.
+// after - Agrega contenido después de los elementos seleccionados.
+// before - Agrega contenido antes de los elementos seleccionados.
+
+
+
+
+// La variable $ es una función que recibe como primer parámetro un selector CSS. Veamos algunos ejemplos:
+//
+// $(p) - Selecciona todos los párrafos del documento.
+// $('.item') - Selecciona todos los elementos que tengan la clase item.
+// $('#example') - Selecciona todos los elementos que tengan el id example.
+// $('.wrapper p') - Selecciona todos los elementos p que estén dentro de otro elemento
+
+
+
+
+
+
+
+  </script>
+
+
+
+
+</body>
+</html>
